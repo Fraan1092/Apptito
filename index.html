@@ -44,13 +44,23 @@
         </section>
         <section>
             <h2>Cat Form</h2>
-            <form action="https://freecatphotoapp.com/submit-cat-photo" placeholder="cat photo URL">
-                <label><input type="radio" name="indoor-outdoor" id="Indoor" value="Indoor">Indoor</label>
-                <label><input type="radio" name="indoor-outdoor" id="Outdoor" value="Outdoor">Outdoor</label>
+            <form action="https://freecatphotoapp.com/submit-cat-photo" required placeholder="cat photo URL">
+                <fieldset>
+                    <legend>Is your cat an indoor or outdoor cat?</legend>
+                    <label><input checked type="radio" name="indoor-outdoor" id="Indoor" value="Indoor">Indoor</label>
+                    <label><input type="radio" name="indoor-outdoor" id="Outdoor" value="Outdoor">Outdoor</label>
+                </fieldset>
+                <fieldset>
+                    <legend>What's your cat's personality?</legend>
+                    <input checked type="checkbox" name="personality" id="loving" value="loving"><label for="loving">Loving</label>
+                    <input type="checkbox" name="personality" id="lazy" value="lazy"><label for="lazy">Lazy</label>
+                    <input value="energetic" type="checkbox" name="personality" id="energetic"><label for="energetic" >Energetic</label>
+                </fieldset>
                 <input type="text" name="catphotourl" placeholder="cat photo Url" required id="">
                 <button type="submit">Submit</button>
             </form>
         </section>
     </main>
+    <footer>No Copyright - <a href="https://www.freecodecamp.org">freeCodeCamp.org</a></footer>
 </body>
 </html>
